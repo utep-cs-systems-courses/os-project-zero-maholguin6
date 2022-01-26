@@ -4,12 +4,20 @@ import sys
 import re
 
 def tofile(output):
+    """
+    Write results to File
+    """
+    
     with open(output, "w") as to:
         for k,v in result.items():
             to.write("{} {}\n".format(k,v))
 
 
 def arrange(a):
+    """
+    Arrange the word alphabetically
+    """
+    
     tmp = {}
     for i in sorted(a):
         tmp[i] = a[i]
